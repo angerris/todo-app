@@ -37,6 +37,7 @@ const App: React.FC = () => {
     setTodos([newTodo, ...todos]);
     setInputText("");
   };
+
   const handleDeleteTodo = (id: any) => {
     const updatedTodos = todos.filter((todo) => todo.id !== id);
     setTodos(updatedTodos);
