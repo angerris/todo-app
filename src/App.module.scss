@@ -33,11 +33,13 @@ $dark: #176b87;
   color: $dark;
 }
 .inputWrapper {
+  position: relative;
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 14px;
+  gap: 8px;
   justify-content: space-between;
+  z-index: 3;
 }
 .taskWrapper {
   padding: 14px;
@@ -49,4 +51,18 @@ $dark: #176b87;
 .todoText {
   max-width: 30%;
   word-wrap: break-word;
+}
+.animation {
+  border: none;
+  position: absolute;
+  z-index: 1;
+  top: -110px;
+  pointer-events: none;
+}
+.taskItem {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.actions {
+  display: flex;
 }
